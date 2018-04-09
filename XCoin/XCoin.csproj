@@ -1,21 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Copyright>2015-2017 The Neo Project</Copyright>
-    <AssemblyTitle>Neo</AssemblyTitle>
-    <Version>2.7.4</Version>
-    <Authors>The Neo Project</Authors>
+    <Copyright>2015-2018 The XCoin Project</Copyright>
+    <AssemblyTitle>XCoin</AssemblyTitle>
+    <Version>1.0.0</Version>
+    <Authors>The XCoin Project</Authors>
     <TargetFrameworks>netstandard2.0;net47</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AssemblyName>Neo</AssemblyName>
-    <PackageId>Neo</PackageId>
-    <PackageTags>NEO;AntShares;Blockchain;Smart Contract</PackageTags>
-    <PackageProjectUrl>https://github.com/neo-project/neo</PackageProjectUrl>
+    <AssemblyName>XCoin</AssemblyName>
+    <PackageId>XCoin</PackageId>
+    <PackageTags>XCoin;AntShares;Blockchain;Smart Contract</PackageTags>
+    <PackageProjectUrl>https://github.com/The-XCoin-Project</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/neo-project/neo.git</RepositoryUrl>
-    <RootNamespace>Neo</RootNamespace>
-    <Company>The Neo Project</Company>
-    <Description>Neo</Description>
+    <RepositoryUrl>https://github.com/The-XCoin-Project</RepositoryUrl>
+    <RootNamespace>XCoin</RootNamespace>
+    <Company>The XCoin Project</Company>
+    <Description>XCoin</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -38,7 +38,7 @@
     <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.0.2" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.1" />
-    <PackageReference Include="Neo.VM" Version="2.2.0" />
+    <PackageReference Include="XCoin.VM" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net47' ">

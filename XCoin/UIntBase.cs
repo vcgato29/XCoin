@@ -1,9 +1,9 @@
-﻿using Neo.IO;
+﻿using XCoin.IO;
 using System;
 using System.IO;
 using System.Linq;
 
-namespace Neo
+namespace XCoin
 {
     public abstract class UIntBase : IEquatable<UIntBase>, ISerializable
     {

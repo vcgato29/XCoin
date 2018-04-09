@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Neo.Core;
+using XCoin.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Neo
+namespace XCoin
 {
     internal class Settings
     {

@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Linq;
 
-namespace Neo
+namespace XCoin
 {
     public class UInt160 : UIntBase, IComparable<UInt160>, IEquatable<UInt160>
     {

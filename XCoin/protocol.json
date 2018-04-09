@@ -14,11 +14,11 @@
       "02486fd15702c4490a26703112a5cc1d0923fd697a33406bd5a1c00e0013b09a70"
     ],
     "SeedList": [
-      "seed1.neo.org:10333",
-      "seed2.neo.org:10333",
-      "seed3.neo.org:10333",
-      "seed4.neo.org:10333",
-      "seed5.neo.org:10333"
+      "seed1.xcoin.org:10777",
+      "seed2.xcoin.org:10777",
+      "seed3.xcoin.org:10777",
+      "seed4.xcoin.org:10777",
+      "seed5.xcoin.org:10777"
     ],
     "SystemFee": {
       "EnrollmentTransaction": 1000,

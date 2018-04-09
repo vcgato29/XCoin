@@ -1,9 +1,9 @@
-NEO: A distributed network for the Smart Economy
+XCoin: A distributed network for the Smart Economy
 ================
 
-NEO uses digital identity and blockchain technology to digitize assets and leverages smart contracts for autonomously managed digital assets to create a "smart economy" within a decentralized network.
+XCoin uses digital identity and blockchain technology to digitize assets and leverages smart contracts for autonomously managed digital assets to create a "smart economy" within a decentralized network.
 
-To learn more about NEO, please read the [White Paper](http://docs.neo.org/en-us/index.html)|[白皮书](http://docs.neo.org/zh-cn/index.html).
+To learn more about XCoin, please read the [White Paper](http://docs.XCoin.org/en-us/index.html)|[白皮书](http://docs.XCoin.org/zh-cn/index.html).
 
 Supported Platforms
 --------
@@ -29,22 +29,22 @@ We will support the following platforms in the future:
 Development
 --------
 
-To start building peer applications for NEO on Windows, you need to download [Visual Studio 2017](https://www.visualstudio.com/products/visual-studio-community-vs), install the [.NET Framework 4.7 Developer Pack](https://www.microsoft.com/en-us/download/details.aspx?id=55168) and the [.NET Core SDK](https://www.microsoft.com/net/core).
+To start building peer applications for XCoin on Windows, you need to download [Visual Studio 2018](https://www.visualstudio.com/products/visual-studio-community-vs), install the [.NET Framework 4.7 Developer Pack](https://www.microsoft.com/en-us/download/details.aspx?id=55168) and the [.NET Core SDK](https://www.microsoft.com/net/core).
 
 If you need to develop on Linux or macOS, just install the [.NET Core SDK](https://www.microsoft.com/net/core).
 
-To install Neo SDK to your project, run the following command in the [Package Manager Console](https://docs.nuget.org/ndocs/tools/package-manager-console):
+To install XCoin SDK to your project, run the following command in the [Package Manager Console](https://docs.nuget.org/ndocs/tools/package-manager-console):
 
 ```
-PM> Install-Package Neo
+PM> Install-Package XCoin
 ```
 
-For more information about how to build DAPPs for NEO, please read the [documentation](http://docs.neo.org/en-us/sc/introduction.html)|[文档](http://docs.neo.org/zh-cn/sc/introduction.html).
+For more information about how to build DAPPs for XCoin, please read the [documentation](http://docs.XCoin.org/en-us/sc/introduction.html)|[文档](http://docs.XCoin.org/zh-cn/sc/introduction.html).
 
 How to Contribute
 --------
 
-You can contribute to NEO with [issues](https://github.com/neo-project/neo/issues) and [PRs](https://github.com/neo-project/neo/pulls). Simply filing issues for problems you encounter is a great way to contribute. Contributing implementations is greatly appreciated.
+You can contribute to XCoin with [issues](https://github.com/XCoin-project/XCoin/issues) and [PRs](https://github.com/XCoin-project/XCoin/pulls). Simply filing issues for problems you encounter is a great way to contribute. Contributing implementations is greatly appreciated.
 
 We use and recommend the following workflow:
 
@@ -69,4 +69,4 @@ Note: It is OK for your PR to include a large number of commits. Once your chang
 License
 ------
 
-The NEO project is licensed under the [MIT license](LICENSE).
+The XCoin Project is licensed under the [MIT license](LICENSE).
