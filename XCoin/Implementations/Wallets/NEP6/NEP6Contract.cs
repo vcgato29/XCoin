@@ -1,8 +1,8 @@
-﻿using Neo.IO.Json;
-using Neo.SmartContract;
+﻿using XCoin.IO.Json;
+using XCoin.SmartContract;
 using System.Linq;
 
-namespace Neo.Implementations.Wallets.NEP6
+namespace XCoin.Implementations.Wallets.NEP6
 {
     internal class NEP6Contract : Contract
     {

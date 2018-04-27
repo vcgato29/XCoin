@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Neo.Consensus
+namespace XCoin.Consensus
 {
     internal class ChangeView : ConsensusMessage
     {

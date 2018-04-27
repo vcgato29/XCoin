@@ -1,10 +1,10 @@
-﻿using Neo.Core;
-using Neo.IO;
+﻿using XCoin.Core;
+using XCoin.IO;
 using System;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Consensus
+namespace XCoin.Consensus
 {
     internal class PrepareRequest : ConsensusMessage
     {

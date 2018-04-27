@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Neo.IO.Data.LevelDB
+namespace XCoin.IO.Data.LevelDB
 {
     internal class SliceBuilder
     {

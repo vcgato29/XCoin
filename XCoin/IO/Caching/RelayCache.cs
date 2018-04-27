@@ -1,6 +1,6 @@
-﻿using Neo.Network;
+﻿using XCoin.Network;
 
-namespace Neo.IO.Caching
+namespace XCoin.IO.Caching
 {
     internal class RelayCache : FIFOCache<UInt256, IInventory>
     {

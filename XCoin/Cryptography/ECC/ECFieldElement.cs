@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Numerics;
 
-namespace Neo.Cryptography.ECC
+namespace XCoin.Cryptography.ECC
 {
     internal class ECFieldElement : IComparable<ECFieldElement>, IEquatable<ECFieldElement>
     {

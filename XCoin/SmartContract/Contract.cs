@@ -1,11 +1,11 @@
-﻿using Neo.Core;
-using Neo.Cryptography.ECC;
-using Neo.VM;
-using Neo.Wallets;
+﻿using XCoin.Core;
+using XCoin.Cryptography.ECC;
+using XCoin.Wallets;
 using System;
 using System.Linq;
+using Trinity.VM;
 
-namespace Neo.SmartContract
+namespace XCoin.SmartContract
 {
     public class Contract
     {
@@ -13,9 +13,7 @@ namespace Neo.SmartContract
         public ContractParameterType[] ParameterList;
 
         private string _address;
-        /// <summary>
-        /// 合约地址
-        /// </summary>
+      
         public string Address
         {
             get

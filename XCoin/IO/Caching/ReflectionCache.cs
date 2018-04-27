@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Neo.IO.Caching
+namespace XCoin.IO.Caching
 {
     public class ReflectionCache<T> : Dictionary<T, Type>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     /// <summary>
     /// 合约交易，这是最常用的一种交易

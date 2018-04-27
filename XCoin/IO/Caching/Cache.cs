@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Neo.IO.Caching
+namespace XCoin.IO.Caching
 {
     internal abstract class Cache<TKey, TValue> : ICollection<TValue>, IDisposable
     {

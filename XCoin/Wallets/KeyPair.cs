@@ -1,12 +1,12 @@
-﻿using Neo.Core;
-using Neo.Cryptography;
-using Neo.SmartContract;
+﻿using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.SmartContract;
 using System;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Neo.Wallets
+namespace XCoin.Wallets
 {
     public class KeyPair : IEquatable<KeyPair>
     {

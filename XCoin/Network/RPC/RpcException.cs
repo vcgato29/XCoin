@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Neo.Network.RPC
+namespace XCoin.Network.RPC
 {
     public class RpcException : Exception
     {

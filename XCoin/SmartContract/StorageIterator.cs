@@ -1,8 +1,8 @@
-﻿using Neo.Core;
-using Neo.VM;
+﻿using XCoin.Core;
 using System.Collections.Generic;
+using Trinity.VM;
 
-namespace Neo.SmartContract
+namespace XCoin.SmartContract
 {
     internal class StorageIterator : Iterator
     {

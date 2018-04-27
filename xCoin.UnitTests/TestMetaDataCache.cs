@@ -1,7 +1,7 @@
-﻿using Neo.IO;
-using Neo.IO.Caching;
+﻿using XCoin.IO;
+using XCoin.IO.Caching;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     public class TestMetaDataCache<T> : MetaDataCache<T> where T : class, ISerializable, new()
     {

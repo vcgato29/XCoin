@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.Encodings.Web;
 
-namespace Neo.IO.Json
+namespace XCoin.IO.Json
 {
     public class JString : JObject
     {

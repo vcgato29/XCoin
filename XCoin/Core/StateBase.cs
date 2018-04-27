@@ -1,11 +1,14 @@
-﻿using Neo.IO;
-using Neo.IO.Json;
-using Neo.VM;
+﻿using XCoin.IO;
+using XCoin.IO.Json;
 using System;
 using System.IO;
+using Trinity.VM;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
+    /// <summary>
+    /// Base class for SpentCoinState
+    /// </summary>
     public abstract class StateBase : IInteropInterface, ISerializable
     {
         public const byte StateVersion = 0;

@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace Neo.IO.Json
+namespace XCoin.IO.Json
 {
     public class JNumber : JObject
     {

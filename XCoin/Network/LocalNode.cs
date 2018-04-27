@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Neo.Core;
-using Neo.IO;
-using Neo.IO.Caching;
-using Neo.Network.Payloads;
+using XCoin.Core;
+using XCoin.IO;
+using XCoin.IO.Caching;
+using XCoin.Network.Payloads;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -20,7 +20,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Neo.Network
+namespace XCoin.Network
 {
     public class LocalNode : IDisposable
     {

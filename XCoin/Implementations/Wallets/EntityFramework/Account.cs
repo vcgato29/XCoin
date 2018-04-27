@@ -1,4 +1,4 @@
-﻿namespace Neo.Implementations.Wallets.EntityFramework
+﻿namespace XCoin.Implementations.Wallets.EntityFramework
 {
     internal class Account
     {

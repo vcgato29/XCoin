@@ -1,10 +1,10 @@
-﻿using Neo.Core;
-using Neo.Cryptography.ECC;
-using Neo.IO.Caching;
+﻿using XCoin.Core;
+using XCoin.Cryptography.ECC;
+using XCoin.IO.Caching;
 using System;
 using System.Collections.Generic;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     public class TestBlockchain : Blockchain
     {

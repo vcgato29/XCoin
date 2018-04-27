@@ -1,13 +1,13 @@
 ﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Neo.Core;
-using Neo.IO.Json;
-using Neo.SmartContract;
-using Neo.VM;
+using XCoin.Core;
+using XCoin.IO.Json;
+using XCoin.SmartContract;
 using System.IO;
 using System.Text;
+using Trinity.VM;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     [TestClass]
     public class UT_Block

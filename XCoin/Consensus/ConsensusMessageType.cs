@@ -1,6 +1,6 @@
-﻿using Neo.IO.Caching;
+﻿using XCoin.IO.Caching;
 
-namespace Neo.Consensus
+namespace XCoin.Consensus
 {
     internal enum ConsensusMessageType : byte
     {

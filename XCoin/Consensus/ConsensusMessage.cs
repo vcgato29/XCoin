@@ -1,9 +1,9 @@
-﻿using Neo.IO;
-using Neo.IO.Caching;
+﻿using XCoin.IO;
+using XCoin.IO.Caching;
 using System;
 using System.IO;
 
-namespace Neo.Consensus
+namespace XCoin.Consensus
 {
     internal abstract class ConsensusMessage : ISerializable
     {

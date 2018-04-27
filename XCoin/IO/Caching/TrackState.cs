@@ -1,4 +1,4 @@
-﻿namespace Neo.IO.Caching
+﻿namespace XCoin.IO.Caching
 {
     public enum TrackState : byte
     {

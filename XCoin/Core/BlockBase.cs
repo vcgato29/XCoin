@@ -1,43 +1,23 @@
-﻿using Neo.Cryptography;
-using Neo.IO;
-using Neo.IO.Json;
-using Neo.VM;
-using Neo.Wallets;
+﻿using XCoin.Cryptography;
+using XCoin.IO;
+using XCoin.IO.Json;
+using XCoin.Wallets;
 using System;
 using System.IO;
+using Trinity.VM;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public abstract class BlockBase : IVerifiable
     {
-        /// <summary>
-        /// 区块版本
-        /// </summary>
+        
         public uint Version;
-        /// <summary>
-        /// 前一个区块的散列值
-        /// </summary>
         public UInt256 PrevHash;
-        /// <summary>
-        /// 该区块中所有交易的Merkle树的根
-        /// </summary>
         public UInt256 MerkleRoot;
-        /// <summary>
-        /// 时间戳
-        /// </summary>
         public uint Timestamp;
-        /// <summary>
-        /// 区块高度
-        /// </summary>
         public uint Index;
         public ulong ConsensusData;
-        /// <summary>
-        /// 下一个区块的记账合约的散列值
-        /// </summary>
         public UInt160 NextConsensus;
-        /// <summary>
-        /// 用于验证该区块的脚本
-        /// </summary>
         public Witness Script;
 
         private UInt256 _hash = null;
@@ -137,9 +117,8 @@ namespace Neo.Core
         {
             if (Hash == Blockchain.GenesisBlock.Hash) return true;
             if (Blockchain.Default.ContainsBlock(Hash)) return true;
-            Header prev_header = Blockchain.Default.GetHeader(PrevHash);
-            if (prev_header == null) return false;
-            if (prev_header.Index + 1 != Index) return false;
+            var prev_header = Blockchain.Default.GetHeader(PrevHash);
+            if (prev_header?.Index + 1 != Index) return false;
             if (prev_header.Timestamp >= Timestamp) return false;
             if (!this.VerifyScripts()) return false;
             return true;

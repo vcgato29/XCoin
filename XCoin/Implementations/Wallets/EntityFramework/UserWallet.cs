@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Neo.Core;
-using Neo.Cryptography;
-using Neo.IO;
-using Neo.SmartContract;
-using Neo.Wallets;
+using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.IO;
+using XCoin.SmartContract;
+using XCoin.Wallets;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Security;
 using System.Security.Cryptography;
 
-namespace Neo.Implementations.Wallets.EntityFramework
+namespace XCoin.Implementations.Wallets.EntityFramework
 {
     public class UserWallet : Wallet, IDisposable
     {

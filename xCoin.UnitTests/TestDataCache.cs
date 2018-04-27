@@ -1,10 +1,10 @@
-﻿using Neo.IO;
-using Neo.IO.Caching;
+﻿using XCoin.IO;
+using XCoin.IO.Caching;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     public class TestDataCache<TKey, TValue> : DataCache<TKey, TValue>
         where TKey : IEquatable<TKey>, ISerializable

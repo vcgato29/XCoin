@@ -1,13 +1,13 @@
-﻿using Neo.Core;
-using Neo.Cryptography;
-using Neo.Cryptography.ECC;
-using Neo.IO;
-using Neo.Network.Payloads;
-using Neo.Wallets;
+﻿using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.Cryptography.ECC;
+using XCoin.IO;
+using XCoin.Network.Payloads;
+using XCoin.Wallets;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Neo.Consensus
+namespace XCoin.Consensus
 {
     internal class ConsensusContext
     {
@@ -123,13 +123,11 @@ namespace Neo.Consensus
             KeyPair = null;
             for (int i = 0; i < Validators.Length; i++)
             {
-                WalletAccount account = wallet.GetAccount(Validators[i]);
-                if (account?.HasKey == true)
-                {
-                    MyIndex = i;
-                    KeyPair = account.GetKey();
-                    break;
-                }
+                var account = wallet.GetAccount(Validators[i]);
+                if (account?.HasKey != true) continue;
+                MyIndex = i;
+                KeyPair = account.GetKey();
+                break;
             }
             _header = null;
         }

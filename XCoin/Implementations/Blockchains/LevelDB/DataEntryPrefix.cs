@@ -1,4 +1,4 @@
-﻿namespace Neo.Implementations.Blockchains.LevelDB
+﻿namespace XCoin.Implementations.Blockchains.LevelDB
 {
     internal static class DataEntryPrefix
     {

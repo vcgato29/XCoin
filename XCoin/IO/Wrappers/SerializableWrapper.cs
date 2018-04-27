@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Neo.IO.Wrappers
+namespace XCoin.IO.Wrappers
 {
     public abstract class SerializableWrapper : ISerializable
     {

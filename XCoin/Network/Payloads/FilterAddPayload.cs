@@ -1,7 +1,7 @@
-﻿using Neo.IO;
+﻿using XCoin.IO;
 using System.IO;
 
-namespace Neo.Network.Payloads
+namespace XCoin.Network.Payloads
 {
     public class FilterAddPayload : ISerializable
     {

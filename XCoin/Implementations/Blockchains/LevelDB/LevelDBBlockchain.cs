@@ -1,19 +1,19 @@
-﻿using Neo.Core;
-using Neo.Cryptography;
-using Neo.Cryptography.ECC;
-using Neo.IO;
-using Neo.IO.Caching;
-using Neo.IO.Data.LevelDB;
-using Neo.SmartContract;
+﻿using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.Cryptography.ECC;
+using XCoin.IO;
+using XCoin.IO.Caching;
+using XCoin.IO.Data.LevelDB;
+using XCoin.SmartContract;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
-using Iterator = Neo.IO.Data.LevelDB.Iterator;
+using Iterator = XCoin.IO.Data.LevelDB.Iterator;
 
-namespace Neo.Implementations.Blockchains.LevelDB
+namespace XCoin.Implementations.Blockchains.LevelDB
 {
     public class LevelDBBlockchain : Blockchain
     {

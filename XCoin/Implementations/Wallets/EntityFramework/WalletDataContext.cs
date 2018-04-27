@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-namespace Neo.Implementations.Wallets.EntityFramework
+namespace XCoin.Implementations.Wallets.EntityFramework
 {
     internal class WalletDataContext : DbContext
     {

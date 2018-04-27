@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     /// <summary>
-    /// 用于分发资产的特殊交易
+    /// Issue Transaction
     /// </summary>
     public class IssueTransaction : Transaction
     {
         /// <summary>
-        /// 系统费用
+        /// 
         /// </summary>
         public override Fixed8 SystemFee
         {
@@ -34,10 +34,7 @@ namespace Neo.Core
             if (Version > 1) throw new FormatException();
         }
 
-        /// <summary>
-        /// 获取需要校验的脚本散列值
-        /// </summary>
-        /// <returns>返回需要校验的脚本散列值</returns>
+        
         public override UInt160[] GetScriptHashesForVerifying()
         {
             HashSet<UInt160> hashes = new HashSet<UInt160>(base.GetScriptHashesForVerifying());
@@ -50,10 +47,7 @@ namespace Neo.Core
             return hashes.OrderBy(p => p).ToArray();
         }
 
-        /// <summary>
-        /// 验证交易
-        /// </summary>
-        /// <returns>返回验证后的结果</returns>
+        
         public override bool Verify(IEnumerable<Transaction> mempool)
         {
             if (!base.Verify(mempool)) return false;

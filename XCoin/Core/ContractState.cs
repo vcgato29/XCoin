@@ -1,10 +1,10 @@
-﻿using Neo.IO;
-using Neo.IO.Json;
-using Neo.SmartContract;
+﻿using XCoin.IO;
+using XCoin.IO.Json;
+using XCoin.SmartContract;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class ContractState : StateBase, ICloneable<ContractState>
     {

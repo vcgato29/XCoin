@@ -1,11 +1,11 @@
-﻿using Neo.IO;
+﻿using XCoin.IO;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Numerics;
 
-namespace Neo.Cryptography.ECC
+namespace XCoin.Cryptography.ECC
 {
     public class ECPoint : IComparable<ECPoint>, IEquatable<ECPoint>, ISerializable
     {

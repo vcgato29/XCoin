@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Neo.IO
+namespace XCoin.IO
 {
     /// <summary>
     /// 为序列化提供一个接口

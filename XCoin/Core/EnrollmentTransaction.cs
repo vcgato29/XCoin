@@ -1,13 +1,13 @@
-﻿using Neo.Cryptography.ECC;
-using Neo.IO;
-using Neo.IO.Json;
-using Neo.SmartContract;
+﻿using XCoin.Cryptography.ECC;
+using XCoin.IO;
+using XCoin.IO.Json;
+using XCoin.SmartContract;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     [Obsolete]
     public class EnrollmentTransaction : Transaction

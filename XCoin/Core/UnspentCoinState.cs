@@ -1,8 +1,8 @@
-﻿using Neo.IO;
+﻿using XCoin.IO;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class UnspentCoinState : StateBase, ICloneable<UnspentCoinState>
     {

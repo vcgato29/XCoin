@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.DependencyInjection;
-using Neo.Core;
-using Neo.IO;
-using Neo.IO.Json;
-using Neo.SmartContract;
-using Neo.VM;
-using Neo.Wallets;
+using XCoin.Core;
+using XCoin.IO;
+using XCoin.IO.Json;
+using XCoin.SmartContract;
+using Trinity.VM;
+using XCoin.Wallets;
 using System;
 using System.IO;
 using System.IO.Compression;
@@ -17,7 +17,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Neo.Network.RPC
+namespace XCoin.Network.RPC
 {
     public class RpcServer : IDisposable
     {
@@ -32,9 +32,11 @@ namespace Neo.Network.RPC
         private static JObject CreateErrorResponse(JObject id, int code, string message, JObject data = null)
         {
             JObject response = CreateResponse(id);
-            response["error"] = new JObject();
-            response["error"]["code"] = code;
-            response["error"]["message"] = message;
+            response["error"] = new JObject
+            {
+                ["code"] = code,
+                ["message"] = message
+            };
             if (data != null)
                 response["error"]["data"] = data;
             return response;
@@ -42,9 +44,11 @@ namespace Neo.Network.RPC
 
         private static JObject CreateResponse(JObject id)
         {
-            JObject response = new JObject();
-            response["jsonrpc"] = "2.0";
-            response["id"] = id;
+            JObject response = new JObject
+            {
+                ["jsonrpc"] = "2.0",
+                ["id"] = id
+            };
             return response;
         }
 
@@ -60,11 +64,13 @@ namespace Neo.Network.RPC
         private static JObject GetInvokeResult(byte[] script)
         {
             ApplicationEngine engine = ApplicationEngine.Run(script);
-            JObject json = new JObject();
-            json["script"] = script.ToHexString();
-            json["state"] = engine.State;
-            json["gas_consumed"] = engine.GasConsumed.ToString();
-            json["stack"] = new JArray(engine.EvaluationStack.Select(p => p.ToParameter().ToJson()));
+            JObject json = new JObject
+            {
+                ["script"] = script.ToHexString(),
+                ["state"] = engine.State,
+                ["gas_consumed"] = engine.GasConsumed.ToString(),
+                ["stack"] = new JArray(engine.EvaluationStack.Select(p => p.ToParameter().ToJson()))
+            };
             return json;
         }
 

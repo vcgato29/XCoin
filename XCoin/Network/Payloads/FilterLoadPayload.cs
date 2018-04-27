@@ -1,9 +1,9 @@
-﻿using Neo.Cryptography;
-using Neo.IO;
+﻿using XCoin.Cryptography;
+using XCoin.IO;
 using System;
 using System.IO;
 
-namespace Neo.Network.Payloads
+namespace XCoin.Network.Payloads
 {
     public class FilterLoadPayload : ISerializable
     {

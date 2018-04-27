@@ -1,7 +1,7 @@
-﻿using Neo.Core;
-using Neo.Cryptography;
-using Neo.IO;
-using Neo.Network.Payloads;
+﻿using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.IO;
+using XCoin.Network.Payloads;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Neo.Network
+namespace XCoin.Network
 {
     public abstract class RemoteNode : IDisposable
     {
@@ -345,7 +345,7 @@ namespace Neo.Network
                 case "pong":
                 case "reject":
                 default:
-                    //暂时忽略
+                    
                     break;
             }
         }

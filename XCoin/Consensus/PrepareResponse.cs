@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Neo.Consensus
+namespace XCoin.Consensus
 {
     internal class PrepareResponse : ConsensusMessage
     {

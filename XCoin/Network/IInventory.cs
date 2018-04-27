@@ -1,6 +1,6 @@
-﻿using Neo.Core;
+﻿using XCoin.Core;
 
-namespace Neo.Network
+namespace XCoin.Network
 {
     public interface IInventory : IVerifiable
     {

@@ -1,8 +1,8 @@
-﻿using Neo.Cryptography.ECC;
-using Neo.IO;
+﻿using XCoin.Cryptography.ECC;
+using XCoin.IO;
 using System.IO;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class ValidatorState : StateBase, ICloneable<ValidatorState>
     {

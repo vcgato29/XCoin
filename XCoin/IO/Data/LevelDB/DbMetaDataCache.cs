@@ -1,7 +1,7 @@
-﻿using Neo.IO.Caching;
+﻿using XCoin.IO.Caching;
 using System;
 
-namespace Neo.IO.Data.LevelDB
+namespace XCoin.IO.Data.LevelDB
 {
     internal class DbMetaDataCache<T> : MetaDataCache<T> where T : class, ISerializable, new()
     {

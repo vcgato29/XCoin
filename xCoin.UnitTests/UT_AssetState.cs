@@ -1,13 +1,13 @@
 ﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Neo.Core;
-using Neo.Cryptography.ECC;
-using Neo.IO;
+using XCoin.Core;
+using XCoin.Cryptography.ECC;
+using XCoin.IO;
 using System.Globalization;
 using System.IO;
 using System.Text;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     [TestClass]
     public class UT_AssetState

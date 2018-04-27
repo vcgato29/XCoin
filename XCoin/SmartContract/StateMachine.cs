@@ -1,14 +1,14 @@
-﻿using Neo.Core;
-using Neo.Cryptography.ECC;
-using Neo.IO.Caching;
-using Neo.VM;
-using Neo.VM.Types;
+﻿using XCoin.Core;
+using XCoin.Cryptography.ECC;
+using XCoin.IO.Caching;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Trinity.VM;
+using Trinity.VM.Types;
 
-namespace Neo.SmartContract
+namespace XCoin.SmartContract
 {
     public class StateMachine : StateReader
     {
@@ -32,24 +32,15 @@ namespace Neo.SmartContract
             this.assets = assets.CreateSnapshot();
             this.contracts = contracts.CreateSnapshot();
             this.storages = storages.CreateSnapshot();
-            Register("Neo.Asset.Create", Asset_Create);
-            Register("Neo.Asset.Renew", Asset_Renew);
-            Register("Neo.Contract.Create", Contract_Create);
-            Register("Neo.Contract.Migrate", Contract_Migrate);
-            Register("Neo.Contract.GetStorageContext", Contract_GetStorageContext);
-            Register("Neo.Contract.Destroy", Contract_Destroy);
-            Register("Neo.Storage.Put", Storage_Put);
-            Register("Neo.Storage.Delete", Storage_Delete);
-            #region Old AntShares APIs
-            Register("AntShares.Asset.Create", Asset_Create);
-            Register("AntShares.Asset.Renew", Asset_Renew);
-            Register("AntShares.Contract.Create", Contract_Create);
-            Register("AntShares.Contract.Migrate", Contract_Migrate);
-            Register("AntShares.Contract.GetStorageContext", Contract_GetStorageContext);
-            Register("AntShares.Contract.Destroy", Contract_Destroy);
-            Register("AntShares.Storage.Put", Storage_Put);
-            Register("AntShares.Storage.Delete", Storage_Delete);
-            #endregion
+            Register("XCoin.Asset.Create", Asset_Create);
+            Register("XCoin.Asset.Renew", Asset_Renew);
+            Register("XCoin.Contract.Create", Contract_Create);
+            Register("XCoin.Contract.Migrate", Contract_Migrate);
+            Register("XCoin.Contract.GetStorageContext", Contract_GetStorageContext);
+            Register("XCoin.Contract.Destroy", Contract_Destroy);
+            Register("XCoin.Storage.Put", Storage_Put);
+            Register("XCoin.Storage.Delete", Storage_Delete);
+          
         }
 
         public void Commit()

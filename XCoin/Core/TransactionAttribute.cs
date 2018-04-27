@@ -1,24 +1,18 @@
-﻿using Neo.IO;
-using Neo.IO.Json;
-using Neo.VM;
+﻿using XCoin.IO;
+using XCoin.IO.Json;
 using System;
 using System.IO;
 using System.Linq;
+using Trinity.VM;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
-    /// <summary>
-    /// 交易特性
-    /// </summary>
+ 
     public class TransactionAttribute : IInteropInterface, ISerializable
     {
-        /// <summary>
-        /// 用途
-        /// </summary>
+        
         public TransactionAttributeUsage Usage;
-        /// <summary>
-        /// 特定于用途的外部数据
-        /// </summary>
+        
         public byte[] Data;
 
         public int Size
@@ -27,12 +21,11 @@ namespace Neo.Core
             {
                 if (Usage == TransactionAttributeUsage.ContractHash || Usage == TransactionAttributeUsage.ECDH02 || Usage == TransactionAttributeUsage.ECDH03 || Usage == TransactionAttributeUsage.Vote || (Usage >= TransactionAttributeUsage.Hash1 && Usage <= TransactionAttributeUsage.Hash15))
                     return sizeof(TransactionAttributeUsage) + 32;
-                else if (Usage == TransactionAttributeUsage.Script)
+                if (Usage == TransactionAttributeUsage.Script)
                     return sizeof(TransactionAttributeUsage) + 20;
-                else if (Usage == TransactionAttributeUsage.DescriptionUrl)
+                if (Usage == TransactionAttributeUsage.DescriptionUrl)
                     return sizeof(TransactionAttributeUsage) + sizeof(byte) + Data.Length;
-                else
-                    return sizeof(TransactionAttributeUsage) + Data.GetVarSize();
+                return sizeof(TransactionAttributeUsage) + Data.GetVarSize();
             }
         }
 
@@ -66,15 +59,13 @@ namespace Neo.Core
                 writer.Write(Data);
         }
 
-        /// <summary>
-        /// 变成json对象
-        /// </summary>
-        /// <returns>返回json对象</returns>
         public JObject ToJson()
         {
-            JObject json = new JObject();
-            json["usage"] = Usage;
-            json["data"] = Data.ToHexString();
+            var json = new JObject
+            {
+                ["usage"] = Usage,
+                ["data"] = Data.ToHexString()
+            };
             return json;
         }
     }

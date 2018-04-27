@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Neo.Core;
-using Neo.IO.Json;
-using Neo.Wallets;
-using Neo.VM;
+using XCoin.Core;
+using XCoin.IO.Json;
 
-namespace Neo.UnitTests
+
+namespace XCoin.UnitTests
 {
     [TestClass]
     public class UT_MinerTransaction

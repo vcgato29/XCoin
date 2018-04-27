@@ -1,4 +1,4 @@
-﻿namespace Neo.Cryptography
+﻿namespace XCoin.Cryptography
 {
     internal class MerkleTreeNode
     {

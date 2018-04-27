@@ -1,4 +1,4 @@
-NEO Unit Tests
+XCOIN Unit Tests
 ====================
 
 This project is a work in progress, aiming to provide unit test coverage for the core NEO code.
@@ -12,7 +12,7 @@ We use built in Visual Studio functionality with MSTest and the Microsoft.Visual
 
 To run the tests, build the solution to discover tests, then view and run the tests from the 'Test Explorer' window within Visual Studio.
 OR
-With .NET Core SDK installed, use the CLI to navigate to the neo.UnitTest folder and use the command 'dotnet restore' to get packages, followed by 'dotnet test' to run tests.
+With .NET Core SDK installed, use the CLI to navigate to the XCoin.UnitTest folder and use the command 'dotnet restore' to get packages, followed by 'dotnet test' to run tests.
 
 Coverage
 ====================

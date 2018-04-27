@@ -1,8 +1,8 @@
-﻿using Neo.Core;
-using Neo.IO.Caching;
-using Neo.VM;
+﻿using Trinity.VM;
+using XCoin.Core;
+using XCoin.IO.Caching;
 
-namespace Neo.SmartContract
+namespace XCoin.SmartContract
 {
     internal class CachedScriptTable : IScriptTable
     {

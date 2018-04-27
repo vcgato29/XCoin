@@ -1,6 +1,6 @@
-﻿using Neo.IO.Json;
+﻿using XCoin.IO.Json;
 
-namespace Neo.Implementations.Wallets.NEP6
+namespace XCoin.Implementations.Wallets.NEP6
 {
     public class ScryptParameters
     {

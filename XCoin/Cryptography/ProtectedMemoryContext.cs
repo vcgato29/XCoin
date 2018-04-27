@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 
-namespace Neo.Cryptography
+namespace XCoin.Cryptography
 {
     internal class ProtectedMemoryContext : IDisposable
     {

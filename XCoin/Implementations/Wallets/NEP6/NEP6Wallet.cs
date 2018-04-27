@@ -1,16 +1,16 @@
-﻿using Neo.Core;
-using Neo.IO.Json;
-using Neo.SmartContract;
-using Neo.Wallets;
+﻿using XCoin.Core;
+using XCoin.IO.Json;
+using XCoin.SmartContract;
+using XCoin.Wallets;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
-using UserWallet = Neo.Implementations.Wallets.EntityFramework.UserWallet;
+using UserWallet = XCoin.Implementations.Wallets.EntityFramework.UserWallet;
 
-namespace Neo.Implementations.Wallets.NEP6
+namespace XCoin.Implementations.Wallets.NEP6
 {
     public class NEP6Wallet : Wallet, IDisposable
     {

@@ -1,4 +1,4 @@
-﻿namespace Neo.Wallets
+﻿namespace XCoin.Wallets
 {
     internal static class DataEntryPrefix
     {

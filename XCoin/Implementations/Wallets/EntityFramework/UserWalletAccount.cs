@@ -1,6 +1,6 @@
-﻿using Neo.Wallets;
+﻿using XCoin.Wallets;
 
-namespace Neo.Implementations.Wallets.EntityFramework
+namespace XCoin.Implementations.Wallets.EntityFramework
 {
     internal class UserWalletAccount : WalletAccount
     {

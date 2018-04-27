@@ -1,10 +1,10 @@
-﻿using Neo.Core;
-using Neo.IO;
+﻿using XCoin.Core;
+using XCoin.IO;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Network.Payloads
+namespace XCoin.Network.Payloads
 {
     public class HeadersPayload : ISerializable
     {

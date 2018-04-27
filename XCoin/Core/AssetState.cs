@@ -1,15 +1,15 @@
-﻿using Neo.Cryptography.ECC;
-using Neo.IO;
-using Neo.IO.Json;
-using Neo.VM;
-using Neo.Wallets;
+﻿using XCoin.Cryptography.ECC;
+using XCoin.IO;
+using XCoin.IO.Json;
+using Trinity.VM;
+using XCoin.Wallets;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class AssetState : StateBase, ICloneable<AssetState>
     {
@@ -93,8 +93,8 @@ namespace Neo.Core
         private Dictionary<CultureInfo, string> _names;
         public string GetName(CultureInfo culture = null)
         {
-            if (AssetType == AssetType.GoverningToken) return "NEO";
-            if (AssetType == AssetType.UtilityToken) return "NeoGas";
+            if (AssetType == AssetType.GoverningToken) return "XCO";
+            if (AssetType == AssetType.UtilityToken) return "SodaToken";
             if (_names == null)
             {
                 JObject name_obj;

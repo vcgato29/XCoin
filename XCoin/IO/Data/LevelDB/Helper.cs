@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Neo.IO.Data.LevelDB
+namespace XCoin.IO.Data.LevelDB
 {
     internal static class Helper
     {

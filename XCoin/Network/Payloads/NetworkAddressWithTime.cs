@@ -1,10 +1,10 @@
-﻿using Neo.IO;
+﻿using XCoin.IO;
 using System;
 using System.IO;
 using System.Linq;
 using System.Net;
 
-namespace Neo.Network.Payloads
+namespace XCoin.Network.Payloads
 {
     public class NetworkAddressWithTime : ISerializable
     {

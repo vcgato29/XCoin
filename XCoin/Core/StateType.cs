@@ -1,4 +1,4 @@
-﻿namespace Neo.Core
+﻿namespace XCoin.Core
 {
     public enum StateType : byte
     {

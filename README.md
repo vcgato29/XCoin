@@ -1,10 +1,10 @@
 XCoin: A distributed network for the Smart Economy
 ================
 
-XCoin uses digital identity and blockchain technology to digitize assets and leverages smart contracts for autonomously managed digital assets to create a "smart economy" within a decentralized network.
+XCoin uses digital identity and blockchain technology to digitize assets and leverages smart contracts for
+autonomously managed digital assets to create a "smart economy" within a decentralized network.
 
-To learn more about XCoin, please read the [White Paper](http://docs.XCoin.org/en-us/index.html)|[白皮书](http://docs.XCoin.org/zh-cn/index.html).
-
+To learn more about XCoin, please read the [White Paper](TO DO ADD URLTO WHITE PAPER)
 Supported Platforms
 --------
 
@@ -39,12 +39,12 @@ To install XCoin SDK to your project, run the following command in the [Package 
 PM> Install-Package XCoin
 ```
 
-For more information about how to build DAPPs for XCoin, please read the [documentation](http://docs.XCoin.org/en-us/sc/introduction.html)|[文档](http://docs.XCoin.org/zh-cn/sc/introduction.html).
+For more information about how to build DAPPs for XCoin, please read the [documentation](TO DO ADD URL TO DOCS)
 
 How to Contribute
 --------
 
-You can contribute to XCoin with [issues](https://github.com/XCoin-project/XCoin/issues) and [PRs](https://github.com/XCoin-project/XCoin/pulls). Simply filing issues for problems you encounter is a great way to contribute. Contributing implementations is greatly appreciated.
+You can contribute to XCoin with [issues](https://github.com/XCoin-project) and [PRs](https://github.com/XCoin-project/XCoin/pulls). Simply filing issues for problems you encounter is a great way to contribute. Contributing implementations is greatly appreciated.
 
 We use and recommend the following workflow:
 

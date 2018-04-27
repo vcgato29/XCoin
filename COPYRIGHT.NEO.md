@@ -1,3 +1,17 @@
+XCoin project is a a fork of NEO 2018 under the MIT License
+XCcoin team has extendted the orginal code with additional security features and new Desktop Client to 
+support modularity and 3rd party devlopment enviroment
+
+
+
+NEO Website
+Neo Github //TODO ADD GITHUB URL
+
+Thank you to NEO team:
+//TODO ADD DEV TEAM
+
+
+
 The MIT License (MIT)
 
 Copyright (c) 2018 XCoin Developers
@@ -20,4 +34,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

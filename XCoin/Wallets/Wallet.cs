@@ -1,7 +1,7 @@
-﻿using Neo.Core;
-using Neo.Cryptography;
-using Neo.SmartContract;
-using Neo.VM;
+﻿using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.SmartContract;
+using Trinity.VM;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +9,10 @@ using System.Numerics;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using ECPoint = Neo.Cryptography.ECC.ECPoint;
-using VMArray = Neo.VM.Types.Array;
+using ECPoint = XCoin.Cryptography.ECC.ECPoint;
+using VMArray = Trinity.VM.Types.Array;
 
-namespace Neo.Wallets
+namespace XCoin.Wallets
 {
     public abstract class Wallet
     {

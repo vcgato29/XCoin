@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 
-namespace Neo.Cryptography
+namespace XCoin.Cryptography
 {
     /// <summary>
     /// 包含一系列密码学算法的扩展方法

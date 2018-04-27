@@ -1,13 +1,13 @@
-﻿using Neo.Cryptography.ECC;
-using Neo.IO;
-using Neo.IO.Caching;
-using Neo.IO.Json;
+﻿using XCoin.Cryptography.ECC;
+using XCoin.IO;
+using XCoin.IO.Caching;
+using XCoin.IO.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class StateDescriptor : ISerializable
     {
@@ -32,15 +32,19 @@ namespace Neo.Core
             }
         }
 
+        const Int32 KEY_LENGHT = 20;
+        const Int32 VALIDATOR_KEY_LENGHT = 33;
+
         private void CheckAccountState()
         {
-            if (Key.Length != 20) throw new FormatException();
+            
+            if (Key.Length != KEY_LENGHT) throw new FormatException();
             if (Field != "Votes") throw new FormatException();
         }
 
         private void CheckValidatorState()
         {
-            if (Key.Length != 33) throw new FormatException();
+            if (Key.Length != VALIDATOR_KEY_LENGHT) throw new FormatException();
             if (Field != "Registered") throw new FormatException();
         }
 

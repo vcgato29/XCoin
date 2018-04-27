@@ -1,9 +1,9 @@
-﻿using Neo.IO;
-using Neo.VM;
+﻿using XCoin.IO;
+using Trinity.VM;
 using System;
 using System.IO;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class Header : BlockBase, IEquatable<Header>
     {

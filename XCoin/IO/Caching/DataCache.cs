@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Neo.IO.Caching
+namespace XCoin.IO.Caching
 {
     public abstract class DataCache<TKey, TValue>
         where TKey : IEquatable<TKey>, ISerializable

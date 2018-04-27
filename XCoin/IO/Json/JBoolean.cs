@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Neo.IO.Json
+namespace XCoin.IO.Json
 {
     public class JBoolean : JObject
     {

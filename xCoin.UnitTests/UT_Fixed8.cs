@@ -2,7 +2,7 @@ using System;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     [TestClass]
     public class UT_Fixed8

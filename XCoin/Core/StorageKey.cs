@@ -1,10 +1,10 @@
-﻿using Neo.Cryptography;
-using Neo.IO;
+﻿using XCoin.Cryptography;
+using XCoin.IO;
 using System;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class StorageKey : IEquatable<StorageKey>, ISerializable
     {

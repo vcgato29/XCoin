@@ -1,11 +1,11 @@
-﻿using Neo.IO;
-using Neo.IO.Json;
+﻿using XCoin.IO;
+using XCoin.IO.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class ClaimTransaction : Transaction
     {

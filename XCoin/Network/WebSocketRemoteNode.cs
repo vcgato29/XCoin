@@ -1,4 +1,4 @@
-﻿using Neo.IO;
+﻿using XCoin.IO;
 using System;
 using System.IO;
 using System.Net;
@@ -6,7 +6,7 @@ using System.Net.WebSockets;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Neo.Network
+namespace XCoin.Network
 {
     internal class WebSocketRemoteNode : RemoteNode
     {

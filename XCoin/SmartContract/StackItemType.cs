@@ -1,4 +1,4 @@
-﻿namespace Neo.SmartContract
+﻿namespace XCoin.SmartContract
 {
     internal enum StackItemType : byte
     {

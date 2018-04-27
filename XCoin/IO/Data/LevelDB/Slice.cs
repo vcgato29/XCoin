@@ -1,10 +1,10 @@
-﻿using Neo.Cryptography;
+﻿using XCoin.Cryptography;
 using System;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Neo.IO.Data.LevelDB
+namespace XCoin.IO.Data.LevelDB
 {
     internal struct Slice : IComparable<Slice>, IEquatable<Slice>
     {

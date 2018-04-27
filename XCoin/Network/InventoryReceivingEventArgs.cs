@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Neo.Network
+namespace XCoin.Network
 {
     public class InventoryReceivingEventArgs : CancelEventArgs
     {

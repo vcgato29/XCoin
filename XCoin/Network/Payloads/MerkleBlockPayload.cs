@@ -1,11 +1,11 @@
-﻿using Neo.Core;
-using Neo.Cryptography;
-using Neo.IO;
+﻿using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.IO;
 using System.Collections;
 using System.IO;
 using System.Linq;
 
-namespace Neo.Network.Payloads
+namespace XCoin.Network.Payloads
 {
     public class MerkleBlockPayload : BlockBase
     {

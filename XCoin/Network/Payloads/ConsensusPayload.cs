@@ -1,13 +1,13 @@
-﻿using Neo.Core;
-using Neo.Cryptography;
-using Neo.Cryptography.ECC;
-using Neo.IO;
-using Neo.SmartContract;
-using Neo.VM;
+﻿using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.Cryptography.ECC;
+using XCoin.IO;
+using XCoin.SmartContract;
 using System;
 using System.IO;
+using Trinity.VM;
 
-namespace Neo.Network.Payloads
+namespace XCoin.Network.Payloads
 {
     public class ConsensusPayload : IInventory
     {

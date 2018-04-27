@@ -1,11 +1,11 @@
 ﻿using System;
-using Neo.Core;
-using Neo.Cryptography.ECC;
-using Neo.VM;
-using Neo.Wallets;
-using Neo.SmartContract;
+using Trinity.VM;
+using XCoin.Core;
+using XCoin.Cryptography.ECC;
+using XCoin.Wallets;
+using XCoin.SmartContract;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     public static class TestUtils
     {

@@ -1,11 +1,11 @@
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Neo.Core;
-using Neo.Cryptography.ECC;
+using XCoin.Core;
+using XCoin.Cryptography.ECC;
 using System.IO;
 using System.Text;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     [TestClass]
     public class UT_ValidatorState

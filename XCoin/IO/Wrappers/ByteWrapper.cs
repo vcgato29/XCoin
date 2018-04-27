@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Neo.IO.Wrappers
+namespace XCoin.IO.Wrappers
 {
     internal class ByteWrapper : SerializableWrapper<byte>
     {

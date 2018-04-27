@@ -1,6 +1,6 @@
-﻿using Neo.Core;
-using Neo.IO;
-using Neo.IO.Data.LevelDB;
+﻿using XCoin.Core;
+using XCoin.IO;
+using XCoin.IO.Data.LevelDB;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Threading;
 
-namespace Neo.Wallets
+namespace XCoin.Wallets
 {
     public static class WalletIndexer
     {

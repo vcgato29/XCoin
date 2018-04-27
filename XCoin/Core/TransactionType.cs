@@ -1,8 +1,8 @@
 ﻿#pragma warning disable CS0612
 
-using Neo.IO.Caching;
+using XCoin.IO.Caching;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     /// <summary>
     /// 交易类型

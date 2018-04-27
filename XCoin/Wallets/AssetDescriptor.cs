@@ -1,9 +1,9 @@
-﻿using Neo.Core;
-using Neo.SmartContract;
-using Neo.VM;
-using System;
+﻿using System;
+using Trinity.VM;
+using XCoin.Core;
+using XCoin.SmartContract;
 
-namespace Neo.Wallets
+namespace XCoin.Wallets
 {
     public class AssetDescriptor
     {

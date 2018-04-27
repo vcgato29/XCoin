@@ -9,13 +9,15 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>XCoin</AssemblyName>
     <PackageId>XCoin</PackageId>
-    <PackageTags>XCoin;AntShares;Blockchain;Smart Contract</PackageTags>
+    <PackageTags>XCoin;Blockchain;Smart Contract</PackageTags>
     <PackageProjectUrl>https://github.com/The-XCoin-Project</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/The-XCoin-Project</RepositoryUrl>
     <RootNamespace>XCoin</RootNamespace>
     <Company>The XCoin Project</Company>
-    <Description>XCoin</Description>
+    <Description>XCoin Blockchain</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>XCoin Blockchain</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -38,7 +40,7 @@
     <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.0.2" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.1" />
-    <PackageReference Include="XCoin.VM" Version="2.2.0" />
+    <PackageReference Include="Trinity.VM" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net47' ">

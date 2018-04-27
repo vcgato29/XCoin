@@ -1,4 +1,4 @@
-﻿namespace Neo.Core
+﻿namespace XCoin.Core
 {
     /// <summary>
     /// 交易结果，表示交易中资产的变化量

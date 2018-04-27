@@ -1,9 +1,9 @@
-﻿using Neo.Core;
-using Neo.IO;
+﻿using XCoin.Core;
+using XCoin.IO;
 using System;
 using System.IO;
 
-namespace Neo.Network.Payloads
+namespace XCoin.Network.Payloads
 {
     public class VersionPayload : ISerializable
     {

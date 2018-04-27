@@ -1,12 +1,12 @@
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Neo.Core;
-using Neo.IO.Json;
+using XCoin.Core;
+using XCoin.IO.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     [TestClass]
     public class UT_TransactionAttribute

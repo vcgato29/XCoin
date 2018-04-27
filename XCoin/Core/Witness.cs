@@ -1,8 +1,8 @@
-﻿using Neo.IO;
-using Neo.IO.Json;
+﻿using XCoin.IO;
+using XCoin.IO.Json;
 using System.IO;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class Witness : ISerializable
     {

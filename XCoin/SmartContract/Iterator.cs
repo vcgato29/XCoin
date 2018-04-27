@@ -1,7 +1,7 @@
-﻿using Neo.VM;
-using System;
+﻿using System;
+using Trinity.VM;
 
-namespace Neo.SmartContract
+namespace XCoin.SmartContract
 {
     internal abstract class Iterator : IDisposable, IInteropInterface
     {

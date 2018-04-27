@@ -1,15 +1,15 @@
-﻿using Neo.Core;
-using Neo.Cryptography.ECC;
-using Neo.IO.Json;
-using Neo.VM;
+﻿using XCoin.Core;
+using XCoin.Cryptography.ECC;
+using XCoin.IO.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using Trinity.VM;
 
-namespace Neo.SmartContract
+namespace XCoin.SmartContract
 {
     public class ContractParametersContext
     {
@@ -213,7 +213,7 @@ namespace Neo.SmartContract
             for (int i = 0; i < ScriptHashes.Count; i++)
             {
                 ContextItem item = ContextItems[ScriptHashes[i]];
-                using (ScriptBuilder sb = new ScriptBuilder())
+                using (var sb = new ScriptBuilder())
                 {
                     foreach (ContractParameter parameter in item.Parameters.Reverse())
                     {

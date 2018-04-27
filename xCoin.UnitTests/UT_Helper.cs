@@ -2,10 +2,10 @@
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using FluentAssertions;
-using Neo.Core;
-using Neo.Wallets;
+using XCoin.Core;
+using XCoin.Wallets;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     [TestClass]
     public class UT_Helper

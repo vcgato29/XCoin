@@ -1,4 +1,4 @@
-﻿namespace Neo.IO
+﻿namespace XCoin.IO
 {
     public interface ICloneable<T>
     {

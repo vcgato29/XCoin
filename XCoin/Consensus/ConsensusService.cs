@@ -1,16 +1,16 @@
-﻿using Neo.Core;
-using Neo.Cryptography;
-using Neo.IO;
-using Neo.Network;
-using Neo.Network.Payloads;
-using Neo.SmartContract;
-using Neo.Wallets;
+﻿using XCoin.Core;
+using XCoin.Cryptography;
+using XCoin.IO;
+using XCoin.Network;
+using XCoin.Network.Payloads;
+using XCoin.SmartContract;
+using XCoin.Wallets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-namespace Neo.Consensus
+namespace XCoin.Consensus
 {
     public class ConsensusService : IDisposable
     {

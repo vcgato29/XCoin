@@ -1,12 +1,12 @@
-﻿using Neo.Core;
-using Neo.IO.Caching;
-using Neo.VM;
-using Neo.VM.Types;
+﻿using XCoin.Core;
+using XCoin.IO.Caching;
 using System.Collections;
 using System.Numerics;
 using System.Text;
+using Trinity.VM;
+using Trinity.VM.Types;
 
-namespace Neo.SmartContract
+namespace XCoin.SmartContract
 {
     public class ApplicationEngine : ExecutionEngine
     {
@@ -50,9 +50,10 @@ namespace Neo.SmartContract
             this.gas_amount = gas_free + gas.GetData();
             this.testMode = testMode;
             this.Trigger = trigger;
-            if (table is CachedScriptTable)
+            var scriptTable = table as CachedScriptTable;
+            if (scriptTable != null)
             {
-                this.script_table = (CachedScriptTable)table;
+                this.script_table = scriptTable;
             }
         }
 
@@ -353,48 +354,48 @@ namespace Neo.SmartContract
             string api_name = Encoding.ASCII.GetString(CurrentContext.Script, CurrentContext.InstructionPointer + 2, length);
             switch (api_name)
             {
-                case "Neo.Runtime.CheckWitness":
+                case "XCoin.Runtime.CheckWitness":
                 case "AntShares.Runtime.CheckWitness":
                     return 200;
-                case "Neo.Blockchain.GetHeader":
+                case "XCoin.Blockchain.GetHeader":
                 case "AntShares.Blockchain.GetHeader":
                     return 100;
-                case "Neo.Blockchain.GetBlock":
+                case "XCoin.Blockchain.GetBlock":
                 case "AntShares.Blockchain.GetBlock":
                     return 200;
-                case "Neo.Blockchain.GetTransaction":
+                case "XCoin.Blockchain.GetTransaction":
                 case "AntShares.Blockchain.GetTransaction":
                     return 100;
-                case "Neo.Blockchain.GetAccount":
+                case "XCoin.Blockchain.GetAccount":
                 case "AntShares.Blockchain.GetAccount":
                     return 100;
-                case "Neo.Blockchain.GetValidators":
+                case "XCoin.Blockchain.GetValidators":
                 case "AntShares.Blockchain.GetValidators":
                     return 200;
-                case "Neo.Blockchain.GetAsset":
+                case "XCoin.Blockchain.GetAsset":
                 case "AntShares.Blockchain.GetAsset":
                     return 100;
-                case "Neo.Blockchain.GetContract":
+                case "XCoin.Blockchain.GetContract":
                 case "AntShares.Blockchain.GetContract":
                     return 100;
-                case "Neo.Transaction.GetReferences":
+                case "XCoin.Transaction.GetReferences":
                 case "AntShares.Transaction.GetReferences":
-                case "Neo.Transaction.GetUnspentCoins":
+                case "XCoin.Transaction.GetUnspentCoins":
                     return 200;
-                case "Neo.Account.SetVotes":
+                case "XCoin.Account.SetVotes":
                 case "AntShares.Account.SetVotes":
                     return 1000;
-                case "Neo.Validator.Register":
+                case "XCoin.Validator.Register":
                 case "AntShares.Validator.Register":
                     return 1000L * 100000000L / ratio;
-                case "Neo.Asset.Create":
+                case "XCoin.Asset.Create":
                 case "AntShares.Asset.Create":
                     return 5000L * 100000000L / ratio;
-                case "Neo.Asset.Renew":
+                case "XCoin.Asset.Renew":
                 case "AntShares.Asset.Renew":
                     return (byte)EvaluationStack.Peek(1).GetBigInteger() * 5000L * 100000000L / ratio;
-                case "Neo.Contract.Create":
-                case "Neo.Contract.Migrate":
+                case "XCoin.Contract.Create":
+                case "XCoin.Contract.Migrate":
                 case "AntShares.Contract.Create":
                 case "AntShares.Contract.Migrate":
                     long fee = 100L;
@@ -410,13 +411,13 @@ namespace Neo.SmartContract
                         fee += 500L;
                     }
                     return fee * 100000000L / ratio;
-                case "Neo.Storage.Get":
+                case "XCoin.Storage.Get":
                 case "AntShares.Storage.Get":
                     return 100;
-                case "Neo.Storage.Put":
+                case "XCoin.Storage.Put":
                 case "AntShares.Storage.Put":
                     return ((EvaluationStack.Peek(1).GetByteArray().Length + EvaluationStack.Peek(2).GetByteArray().Length - 1) / 1024 + 1) * 1000;
-                case "Neo.Storage.Delete":
+                case "XCoin.Storage.Delete":
                 case "AntShares.Storage.Delete":
                     return 100;
                 default:

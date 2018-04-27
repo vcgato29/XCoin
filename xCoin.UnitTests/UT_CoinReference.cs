@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Neo.Core;
+using XCoin.Core;
 using System.IO;
-using Neo.IO;
-using Neo.IO.Json;
+using XCoin.IO;
+using XCoin.IO.Json;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     [TestClass]
     public class UT_CoinReference

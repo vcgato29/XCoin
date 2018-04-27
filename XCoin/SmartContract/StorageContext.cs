@@ -1,6 +1,7 @@
-﻿using Neo.VM;
+﻿using Trinity.VM;
 
-namespace Neo.SmartContract
+
+namespace XCoin.SmartContract
 {
     internal class StorageContext : IInteropInterface
     {

@@ -1,15 +1,17 @@
-﻿using Neo.Cryptography.ECC;
-using Neo.IO;
-using Neo.SmartContract;
-using Neo.VM.Types;
+﻿using XCoin.Cryptography.ECC;
+using XCoin.IO;
+using XCoin.SmartContract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using VMArray = Neo.VM.Types.Array;
-using VMBoolean = Neo.VM.Types.Boolean;
+using Trinity.VM;
+using Trinity.VM.Types;
+using XCoin;
+using VMArray = Trinity.VM.Types.Array;
+using VMBoolean = Trinity.VM.Types.Boolean;
 
-namespace Neo.VM
+namespace Trinity.VM
 {
     public static class Helper
     {

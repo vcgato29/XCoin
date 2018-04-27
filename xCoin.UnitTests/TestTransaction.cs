@@ -1,9 +1,9 @@
-﻿using Neo.Core;
+﻿using XCoin.Core;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     public class TestTransaction : Transaction
     {

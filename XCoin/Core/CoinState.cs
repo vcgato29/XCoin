@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     [Flags]
     public enum CoinState : byte

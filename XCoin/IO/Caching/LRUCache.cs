@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Neo.IO.Caching
+namespace XCoin.IO.Caching
 {
     internal abstract class LRUCache<TKey, TValue> : Cache<TKey, TValue>
     {

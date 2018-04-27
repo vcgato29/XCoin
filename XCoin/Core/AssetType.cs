@@ -1,4 +1,4 @@
-﻿namespace Neo.Core
+﻿namespace XCoin.Core
 {
     /// <summary>
     /// 资产类别

@@ -1,6 +1,6 @@
-﻿using Neo.SmartContract;
+﻿using XCoin.SmartContract;
 
-namespace Neo.Wallets
+namespace XCoin.Wallets
 {
     public abstract class WalletAccount
     {

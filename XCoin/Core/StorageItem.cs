@@ -1,7 +1,7 @@
-﻿using Neo.IO;
+﻿using XCoin.IO;
 using System.IO;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class StorageItem : StateBase, ICloneable<StorageItem>
     {

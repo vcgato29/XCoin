@@ -1,8 +1,8 @@
 using System;
 using System.IO;
-using Neo.Core;
+using XCoin.Core;
 
-namespace Neo.UnitTests
+namespace XCoin.UnitTests
 {
     public class TestVerifiable : IVerifiable
     {

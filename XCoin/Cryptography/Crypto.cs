@@ -1,9 +1,9 @@
-﻿using Neo.VM;
-using System;
+﻿using System;
 using System.Linq;
 using System.Security.Cryptography;
+using Trinity.VM;
 
-namespace Neo.Cryptography
+namespace XCoin.Cryptography
 {
     public class Crypto : ICrypto
     {

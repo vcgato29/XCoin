@@ -1,8 +1,8 @@
-﻿using Neo.IO.Caching;
+﻿using XCoin.IO.Caching;
 using System;
 using System.Collections.Generic;
 
-namespace Neo.IO.Data.LevelDB
+namespace XCoin.IO.Data.LevelDB
 {
     internal class DbCache<TKey, TValue> : DataCache<TKey, TValue>
         where TKey : IEquatable<TKey>, ISerializable, new()

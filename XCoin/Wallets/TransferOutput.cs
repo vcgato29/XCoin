@@ -1,7 +1,7 @@
-﻿using Neo.Core;
+﻿using XCoin.Core;
 using System;
 
-namespace Neo.Wallets
+namespace XCoin.Wallets
 {
     public class TransferOutput
     {

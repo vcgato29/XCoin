@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Neo.Implementations.Wallets.NEP6
+namespace XCoin.Implementations.Wallets.NEP6
 {
     internal class WalletLocker : IDisposable
     {

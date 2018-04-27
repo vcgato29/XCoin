@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Numerics;
 
-namespace Neo.Cryptography.ECC
+namespace XCoin.Cryptography.ECC
 {
     /// <summary>
     /// ECC椭圆曲线参数

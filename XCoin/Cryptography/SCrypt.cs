@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace Neo.Cryptography
+namespace XCoin.Cryptography
 {
     public static class SCrypt
     {

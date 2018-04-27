@@ -1,6 +1,6 @@
 ﻿using System.Data.Common;
 
-namespace Neo.IO.Data.LevelDB
+namespace XCoin.IO.Data.LevelDB
 {
     internal class LevelDBException : DbException
     {

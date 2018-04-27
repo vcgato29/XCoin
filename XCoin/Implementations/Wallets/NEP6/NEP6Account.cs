@@ -1,8 +1,8 @@
-﻿using Neo.IO.Json;
-using Neo.Wallets;
+﻿using XCoin.IO.Json;
+using XCoin.Wallets;
 using System;
 
-namespace Neo.Implementations.Wallets.NEP6
+namespace XCoin.Implementations.Wallets.NEP6
 {
     internal class NEP6Account : WalletAccount
     {

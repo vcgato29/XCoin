@@ -1,9 +1,9 @@
-﻿using Neo.SmartContract;
-using Neo.VM;
+﻿using XCoin.SmartContract;
 using System;
+using Trinity.VM;
 using System.Linq;
 
-namespace Neo.Core
+namespace XCoin.Core
 {
     public class ApplicationExecutedEventArgs : EventArgs
     {

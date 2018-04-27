@@ -1,4 +1,4 @@
-﻿namespace Neo.Core
+﻿namespace XCoin.Core
 {
     /// <summary>
     /// 表示交易特性的用途
